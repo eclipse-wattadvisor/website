@@ -22,7 +22,7 @@ Classes
 Module Contents
 ---------------
 
-.. py:class:: EnergyType
+.. py:class:: EnergyType(*args, **kwds)
 
    Bases: :py:obj:`enum.Enum`
 

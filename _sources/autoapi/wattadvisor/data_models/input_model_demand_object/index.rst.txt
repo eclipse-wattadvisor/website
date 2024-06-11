@@ -24,7 +24,7 @@ Classes
 Module Contents
 ---------------
 
-.. py:class:: EnergyType
+.. py:class:: EnergyType(*args, **kwds)
 
    Bases: :py:obj:`enum.Enum`
 
@@ -73,7 +73,7 @@ Module Contents
 
 
 
-.. py:class:: Resolution
+.. py:class:: Resolution(*args, **kwds)
 
    Bases: :py:obj:`enum.Enum`
 
@@ -118,7 +118,7 @@ Module Contents
 
 
 
-.. py:class:: EnergyUnit
+.. py:class:: EnergyUnit(*args, **kwds)
 
    Bases: :py:obj:`enum.Enum`
 

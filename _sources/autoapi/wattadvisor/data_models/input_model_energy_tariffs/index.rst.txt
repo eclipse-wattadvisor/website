@@ -55,7 +55,7 @@ Module Contents
       :type:  wattadvisor.data_models.enums.EnergyPriceUnit
 
 
-.. py:class:: EnergyPriceUnit
+.. py:class:: EnergyPriceUnit(*args, **kwds)
 
    Bases: :py:obj:`enum.Enum`
 
@@ -70,7 +70,7 @@ Module Contents
 
 
 
-.. py:class:: Resolution
+.. py:class:: Resolution(*args, **kwds)
 
    Bases: :py:obj:`enum.Enum`
 

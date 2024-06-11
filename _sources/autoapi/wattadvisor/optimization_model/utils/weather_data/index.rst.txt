@@ -29,7 +29,7 @@ Functions
 Module Contents
 ---------------
 
-.. py:class:: WeatherDataLib
+.. py:class:: WeatherDataLib(*args, **kwds)
 
    Bases: :py:obj:`enum.Enum`
 

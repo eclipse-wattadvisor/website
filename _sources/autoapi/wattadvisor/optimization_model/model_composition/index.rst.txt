@@ -261,7 +261,7 @@ Module Contents
    :type power_price: float | None, optional
 
 
-.. py:class:: WeatherDataLib
+.. py:class:: WeatherDataLib(*args, **kwds)
 
    Bases: :py:obj:`enum.Enum`
 

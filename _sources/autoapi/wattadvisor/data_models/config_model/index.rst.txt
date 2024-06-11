@@ -27,7 +27,7 @@ Classes
 Module Contents
 ---------------
 
-.. py:class:: SupportedSolver
+.. py:class:: SupportedSolver(*args, **kwds)
 
    Bases: :py:obj:`enum.Enum`
 

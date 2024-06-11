@@ -22,7 +22,7 @@ Classes
 Module Contents
 ---------------
 
-.. py:class:: OptimizationStatus
+.. py:class:: OptimizationStatus(*args, **kwds)
 
    Bases: :py:obj:`enum.Enum`
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Using WattAdvisor &mdash; wattadvisor 1 documentation</title>
+  <title>Using Eclipse WattAdvisor &mdash; wattadvisor 1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
@@ -21,10 +21,11 @@
         <script src="_static/doctools.js?v=9a2dae69"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="API Reference" href="autoapi/index.html" />
-    <link rel="prev" title="WattAdvisor documentation" href="index.html" /> 
+    <link rel="prev" title="About Eclipse WattAdvisor" href="about.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,10 +47,14 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">About WattAdvisor</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About Eclipse WattAdvisor</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Using WattAdvisor</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation">1. Installation</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using Eclipse WattAdvisor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">1 Installation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#set-up-the-python-environment-via-conda">1.1 Set up the python environment via conda</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#install-anaconda-or-miniconda">1.1.1 Install Anaconda or Miniconda</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#create-the-conda-environment">1.1.2 Create the conda environment</a></li>
@@ -62,9 +67,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#download-weather-data-from-copernicus-climate-change-service">1.3.1 Download weather data from Copernicus Climate Change Service</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#defining-an-input-request">2. Defining an input request</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#running-the-optimization">3. Running the optimization</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#understanding-the-results">4. Understanding the results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defining-an-input-request">2 Defining an input request</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-the-optimization">3 Running the optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#understanding-the-results">4 Understanding the results</a></li>
 </ul>
 </li>
 </ul>
@@ -87,7 +92,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Using WattAdvisor</li>
+      <li class="breadcrumb-item active">Using Eclipse WattAdvisor</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/getting_started.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -97,10 +102,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="using-wattadvisor">
-<h1>Using WattAdvisor<a class="headerlink" href="#using-wattadvisor" title="Link to this heading"></a></h1>
+  <section id="using-eclipse-wattadvisor">
+<h1>Using Eclipse WattAdvisor<a class="headerlink" href="#using-eclipse-wattadvisor" title="Link to this heading"></a></h1>
 <section id="installation">
-<h2>1. Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<h2>1 Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
 <p>Make sure you run the listed commands from a project directory, e.g. <em>WattAdvisor/</em> which should at least contain these sub-directories and files:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>├── WattAdvisor/
 │   ├── wattadvisor/...
@@ -226,7 +231,7 @@ Installation of WattAdvisor is now completed.</p>
 </section>
 </section>
 <section id="defining-an-input-request">
-<h2>2. Defining an input request<a class="headerlink" href="#defining-an-input-request" title="Link to this heading"></a></h2>
+<h2>2 Defining an input request<a class="headerlink" href="#defining-an-input-request" title="Link to this heading"></a></h2>
 <p>To create a new input request, use the prepared data model. Be careful to run these commands inside the newly created conda environment</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">wattadvisor.data_models.input_model</span> <span class="kn">import</span> <span class="n">InputModel</span>
 <span class="kn">from</span> <span class="nn">wattadvisor.data_models.input_model_location</span> <span class="kn">import</span> <span class="n">InputModelLocation</span>
@@ -288,7 +293,7 @@ Installation of WattAdvisor is now completed.</p>
 </ul>
 </section>
 <section id="running-the-optimization">
-<h2>3. Running the optimization<a class="headerlink" href="#running-the-optimization" title="Link to this heading"></a></h2>
+<h2>3 Running the optimization<a class="headerlink" href="#running-the-optimization" title="Link to this heading"></a></h2>
 <p>By running the optimization, recommendations to the following questions can be expected:</p>
 <ul class="simple">
 <li><p>Should more photovoltaic modules be added to the roof system to exceed the cost minimum?</p>
@@ -311,7 +316,7 @@ Installation of WattAdvisor is now completed.</p>
 After a short wait, there should also be a new Excel file at the project directory containing the results.</p>
 </section>
 <section id="understanding-the-results">
-<h2>4. Understanding the results<a class="headerlink" href="#understanding-the-results" title="Link to this heading"></a></h2>
+<h2>4 Understanding the results<a class="headerlink" href="#understanding-the-results" title="Link to this heading"></a></h2>
 <p>Let’s inspect the variable <code class="docutils literal notranslate"><span class="pre">results</span></code>. It is a data model which can be accessed to retrieve the optimal values of our scenario:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
 
@@ -417,7 +422,7 @@ You can also access single values from this big result object. For example, if y
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="WattAdvisor documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="about.html" class="btn btn-neutral float-left" title="About Eclipse WattAdvisor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="autoapi/index.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
