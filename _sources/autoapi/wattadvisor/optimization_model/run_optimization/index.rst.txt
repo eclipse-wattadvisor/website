@@ -1,7 +1,7 @@
-wattadvisor.optimization_model.process_runner
-=============================================
+wattadvisor.optimization_model.run_optimization
+===============================================
 
-.. py:module:: wattadvisor.optimization_model.process_runner
+.. py:module:: wattadvisor.optimization_model.run_optimization
 
 .. autoapi-nested-parse::
 
@@ -16,16 +16,18 @@ Functions
 
 .. autoapisummary::
 
-   wattadvisor.optimization_model.process_runner.run_direct
+   wattadvisor.optimization_model.run_optimization.run
 
 
 Module Contents
 ---------------
 
-.. py:function:: run_direct(inputdata: wattadvisor.data_models.input_model.InputModel, export: bool = False) -> wattadvisor.data_models.optimization_results_model.OptimizationResultsModel
+.. py:function:: run(config: wattadvisor.data_models.config_model.ConfigModel, inputdata: wattadvisor.data_models.input_model.InputModel, export: bool = False) -> wattadvisor.data_models.optimization_results_model.OptimizationResultsModel
 
-   Starts the optimization by using static input data from memory.
+   Starts an optimization by using static input data from memory.
 
+   :param config: optimization model config object
+   :type config: ConfigModel
    :param inputdata: input data to build the optimization model
    :type inputdata: InputModel
    :param export: whether to export detailed result time series to separate excel file, by default False

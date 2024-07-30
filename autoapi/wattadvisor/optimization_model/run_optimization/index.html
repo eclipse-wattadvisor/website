@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>wattadvisor.optimization_model.process_runner &mdash; wattadvisor 1 documentation</title>
+  <title>wattadvisor.optimization_model.run_optimization &mdash; wattadvisor 1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=fd3f3429" />
@@ -86,9 +86,9 @@
           <li class="breadcrumb-item"><a href="../../../index.html">API Reference</a></li>
           <li class="breadcrumb-item"><a href="../../index.html">wattadvisor</a></li>
           <li class="breadcrumb-item"><a href="../index.html">wattadvisor.optimization_model</a></li>
-      <li class="breadcrumb-item active">wattadvisor.optimization_model.process_runner</li>
+      <li class="breadcrumb-item active">wattadvisor.optimization_model.run_optimization</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../../_sources/autoapi/wattadvisor/optimization_model/process_runner/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../../_sources/autoapi/wattadvisor/optimization_model/run_optimization/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -96,8 +96,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-wattadvisor.optimization_model.process_runner">
-<span id="wattadvisor-optimization-model-process-runner"></span><h1>wattadvisor.optimization_model.process_runner<a class="headerlink" href="#module-wattadvisor.optimization_model.process_runner" title="Link to this heading"></a></h1>
+  <section id="module-wattadvisor.optimization_model.run_optimization">
+<span id="wattadvisor-optimization-model-run-optimization"></span><h1>wattadvisor.optimization_model.run_optimization<a class="headerlink" href="#module-wattadvisor.optimization_model.run_optimization" title="Link to this heading"></a></h1>
 <p>Collection of functions to start the optization process
 Copyright (c) 2007, Eclipse Foundation, Inc. and its licensors. All rights reserved.
 Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.</p>
@@ -105,8 +105,8 @@ Use of this source code is governed by a BSD-style license that can be found in 
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading"></a></h2>
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#wattadvisor.optimization_model.process_runner.run_direct" title="wattadvisor.optimization_model.process_runner.run_direct"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run_direct</span></code></a>(...)</p></td>
-<td><p>Starts the optimization by using static input data from memory.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#wattadvisor.optimization_model.run_optimization.run" title="wattadvisor.optimization_model.run_optimization.run"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run</span></code></a>(...)</p></td>
+<td><p>Starts an optimization by using static input data from memory.</p></td>
 </tr>
 </tbody>
 </table>
@@ -114,12 +114,13 @@ Use of this source code is governed by a BSD-style license that can be found in 
 <section id="module-contents">
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading"></a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="wattadvisor.optimization_model.process_runner.run_direct">
-<span class="sig-prename descclassname"><span class="pre">wattadvisor.optimization_model.process_runner.</span></span><span class="sig-name descname"><span class="pre">run_direct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputdata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../data_models/input_model/index.html#wattadvisor.data_models.input_model.InputModel" title="wattadvisor.data_models.input_model.InputModel"><span class="pre">wattadvisor.data_models.input_model.InputModel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">export</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../data_models/optimization_results_model/index.html#wattadvisor.data_models.optimization_results_model.OptimizationResultsModel" title="wattadvisor.data_models.optimization_results_model.OptimizationResultsModel"><span class="pre">wattadvisor.data_models.optimization_results_model.OptimizationResultsModel</span></a></span></span><a class="headerlink" href="#wattadvisor.optimization_model.process_runner.run_direct" title="Link to this definition"></a></dt>
-<dd><p>Starts the optimization by using static input data from memory.</p>
+<dt class="sig sig-object py" id="wattadvisor.optimization_model.run_optimization.run">
+<span class="sig-prename descclassname"><span class="pre">wattadvisor.optimization_model.run_optimization.</span></span><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../data_models/config_model/index.html#wattadvisor.data_models.config_model.ConfigModel" title="wattadvisor.data_models.config_model.ConfigModel"><span class="pre">wattadvisor.data_models.config_model.ConfigModel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputdata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../data_models/input_model/index.html#wattadvisor.data_models.input_model.InputModel" title="wattadvisor.data_models.input_model.InputModel"><span class="pre">wattadvisor.data_models.input_model.InputModel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">export</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../data_models/optimization_results_model/index.html#wattadvisor.data_models.optimization_results_model.OptimizationResultsModel" title="wattadvisor.data_models.optimization_results_model.OptimizationResultsModel"><span class="pre">wattadvisor.data_models.optimization_results_model.OptimizationResultsModel</span></a></span></span><a class="headerlink" href="#wattadvisor.optimization_model.run_optimization.run" title="Link to this definition"></a></dt>
+<dd><p>Starts an optimization by using static input data from memory.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
+<li><p><strong>config</strong> (<a class="reference internal" href="../../data_models/config_model/index.html#wattadvisor.data_models.config_model.ConfigModel" title="wattadvisor.data_models.config_model.ConfigModel"><em>ConfigModel</em></a>) – optimization model config object</p></li>
 <li><p><strong>inputdata</strong> (<a class="reference internal" href="../../data_models/input_model/index.html#wattadvisor.data_models.input_model.InputModel" title="wattadvisor.data_models.input_model.InputModel"><em>InputModel</em></a>) – input data to build the optimization model</p></li>
 <li><p><strong>export</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether to export detailed result time series to separate excel file, by default False</p></li>
 </ul>
