@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>wattadvisor.optimization_model.utils.config_loader &mdash; wattadvisor 1 documentation</title>
+  <title>wattadvisor.optimization_model.utils.config_loader &mdash; WattAdvisor 1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=fd3f3429" />
@@ -37,7 +37,7 @@
           
           
           <a href="../../../../../index.html" class="icon icon-home">
-            wattadvisor
+            WattAdvisor
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
@@ -51,9 +51,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../../about.html">About Eclipse WattAdvisor</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">Installation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../../getting_started.html">Using Eclipse WattAdvisor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../installation.html">Installation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Reference</span></p>
 <ul class="current">
@@ -76,7 +76,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../../../index.html">wattadvisor</a>
+          <a href="../../../../../index.html">WattAdvisor</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -116,14 +116,11 @@ Use of this source code is governed by a BSD-style license that can be found in 
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="wattadvisor.optimization_model.utils.config_loader.load_config">
-<span class="sig-prename descclassname"><span class="pre">wattadvisor.optimization_model.utils.config_loader.</span></span><span class="sig-name descname"><span class="pre">load_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'model_config.yaml'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../../data_models/config_model/index.html#wattadvisor.data_models.config_model.ConfigModel" title="wattadvisor.data_models.config_model.ConfigModel"><span class="pre">wattadvisor.data_models.config_model.ConfigModel</span></a></span></span><a class="headerlink" href="#wattadvisor.optimization_model.utils.config_loader.load_config" title="Link to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">wattadvisor.optimization_model.utils.config_loader.</span></span><span class="sig-name descname"><span class="pre">load_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../../data_models/config_model/index.html#wattadvisor.data_models.config_model.ConfigModel" title="wattadvisor.data_models.config_model.ConfigModel"><span class="pre">wattadvisor.data_models.config_model.ConfigModel</span></a></span></span><a class="headerlink" href="#wattadvisor.optimization_model.utils.config_loader.load_config" title="Link to this definition"></a></dt>
 <dd><p>Loads the config file for the WattAdvisor service optimization model.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>base_path</strong> (<em>Path</em>) – Base path of the whole service</p></li>
-<li><p><strong>filename</strong> (<em>str</em><em>, </em><em>optional</em>) – Filename of the config file, by default “model_config.yaml”</p></li>
-</ul>
+<dd class="field-odd"><p><strong>path</strong> (<em>None</em><em> or </em><em>Path</em><em>, </em><em>optional</em>) – path where the config file is located, by default “./wattadvisor/optimization_model/model_config.yaml”</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Config File represented as a pydantic object</p>
@@ -132,7 +129,7 @@ Use of this source code is governed by a BSD-style license that can be found in 
 <dd class="field-odd"><p><a class="reference internal" href="../../../data_models/config_model/index.html#wattadvisor.data_models.config_model.ConfigModel" title="wattadvisor.data_models.config_model.ConfigModel">ConfigModel</a></p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>FileNotFoundError</strong> – If file <cite>filename</cite> cannot be found under <cite>base_path</cite></p>
+<dd class="field-even"><p><strong>FileNotFoundError</strong> – If file cannot be found under <cite>path</cite></p>
 </dd>
 </dl>
 </dd></dl>
