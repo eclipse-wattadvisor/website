@@ -1,6 +1,7 @@
 name: Clone documentation from code repo
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
     
